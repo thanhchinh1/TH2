@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px auto;
+        padding: 0px;
+      }
+      .wrapper {
+        height: 800px;
+        width: 1089px;
+        background-color: rgb(0, 255, 42);
+      }
+
+      header {
+        position: relative;
+        height: 150px;
+        width: 1089px;
+        background-color: rgb(226, 153, 63);
+      }
+      .nav1 {
+        height: 150px;
+        width: 1089px;
+      }
+
+      .headaer1 {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+        font-size: 40px;
+        color: whitesmoke;
+        text-shadow: rgb(144, 206, 85) 10px 10px 10px;
+      }
+      .menu li {
+        background-color: rgb(122, 34, 238);
+        float: left;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-indent: 5px;
+        border: 1px solid rgb(118, 228, 96);
+        border-radius: 10px;
+        list-style: none;
+        position: relative;
+      }
+      li a {
+        text-decoration: none;
+      }
+      .menu li:hover {
+        background-color: rgb(73, 235, 135);
+      }
+      li:hover > a {
+        color: yellow;
+        font-weight: 10px;
+      }
+      .menu li .sub-menu {
+        display: none;
+        position: absolute;
+      }
+      .menu li:hover > .sub-menu {
+        display: block;
+      }
+      .menu li .sub-menu li:hover .sub-menu {
+        display: block;
+        top: 0px;
+        left: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wapper">
+      <header>
+        <img src="../img/mit.jpg" alt="" srcset="" height="150" width="1089" />
+        <p class="header1">Truong dai hoc cong nghiep</p>
+      </header>
+      <nav class="nav1">
+        <ul class="menu">
+          <li><a href="https://iuh.edu.vn">Home</a></li>
+          <li>
+            <a href="https://fit.edu.iuh.edu.vn">Khoa CNTT</a>
+            <ul class="sub-menu">
+              <li><a href="">Thu vien</a></li>
+              <li>
+                <a href="">Trung tam tin hoc</a>
+                <ul class="sub-menu">
+                  <li><a href="">Trung tam ABC</a></li>
+                  <li><a href="">Trung tam IA</a></li>
+                </ul>
+              </li>
+              <li><a href="">Trung tam ngoai ngu</a></li>
+            </ul>
+          </li>
+          <li><a href="">Khoa hoc may tinh</a></li>
+          <li><a href="">Trung tam tin hoc</a></li>
+          <li><a href="">Ky thuat phan mem</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <aside></aside>
+        <section></section>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>
